@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+  nav#navbar 
+     ul 
+        div#logo
+           img(src="/static/img/logo.png")
+           | UDA
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Service]
+        li #[a(href="/") Class Info]
+        li #[a(href="/") Contact Us]       
+
+section#introSection
+      div Welcome to our Dance Academy 
+      div.small Eat Sleep Dance Repeat
+section#missionSection 
+    h2 Our Mission
+    div.card 
+        h3 Dance Perfection
+        div.card-box
+            div.card-img
+                 img(src="/static/img/1.png", alt="")
+            div.card-content
+                p This is the best dance academy 
+    div.card 
+        h3 Dance the way you like
+        div.card-box
+            div.card-img
+                img(src="/static/img/2.png", alt="")
+            div.card-content
+                p This is the best dance academy 
+    div.card 
+        h3 Good Teaching
+        div.card-box
+            div.card-img
+                img(src="/static/img/3.png", alt="")
+            div.card-content
+                p This is the best dance academy 
+section#sponsorsSection   
+    h2 Our Sponsors
+    div#sponsors
+        img(src="/static/img/l1.png", alt="" class="spimg")
+        img(src="/static/img/l2.png", alt="" class="spimg")
+        img(src="/static/img/l3.png", alt="" class="spimg")
+        img(src="/static/img/l4.png", alt="" class="spimg")
+footer#footer 
+        | copyright	&#169 2023 udaiacademy.com
+script
+      include ../static/index.js 
